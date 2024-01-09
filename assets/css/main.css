@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 15px black;
+}
+header .top-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #c6c6c6;
+}
+header .top-header .top-text {
+  width: 250px;
+}
+header .top-header .top-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .top-header .top-info .red-phone {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6214B;
+  color: #fff;
+}
+header nav a {
+  color: black;
+}
+header nav a:hover {
+  color: #F6214B;
+}
+header nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+header nav .navbar-collapse {
+  justify-content: center;
+}
+header nav .navbar-collapse .navbar-nav .nav-item {
+  gap: 15px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+}
+main #banner-sec {
+  width: 100%;
+  height: 620px;
+  background-image: url(/assets/media/header-bg.jpg);
+  background-size: cover;
+}
+main #banner-sec .banner-sec-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #banner-sec .banner-sec-bg .banner-text {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+main #banner-sec .banner-sec-bg .banner-text h1 {
+  color: #fff;
+  font-size: 74px;
+  font-weight: 700;
+}
+main #banner-sec .banner-sec-bg .banner-text p {
+  color: #fff;
+}
+main #student-sec {
+  width: 100%;
+  height: auto;
+}
+main #student-sec .student-main {
+  width: 75%;
+  margin: auto;
+  text-align: center;
+}
+main #student-sec .student-head {
+  position: relative;
+}
+main #student-sec .student-head button {
+  position: absolute;
+  left: 15px;
+  top: 150px;
+  padding: 10px 30px;
+  background-color: #F6214B;
+  color: #fff;
+  border: none;
+}
+main #student-sec .student-head .student-text {
+  display: flex;
+  justify-content: space-between;
+}
+main #student-sec .student-head .student-text span {
+  color: #F6214B;
+  font-weight: 600;
+}
+main #product-sec {
+  width: 100%;
+}
+main #callto-sec {
+  width: 100%;
+  height: 350px;
+  background-image: url(/assets/media/callto-bg.jpg);
+  background-size: cover;
+}
+main #callto-sec .callto-sec-bg {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main #callto-sec .callto-sec-bg .callto-sec-text {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  text-align: center;
+}
+main #callto-sec .callto-sec-bg .callto-sec-text h2 {
+  color: #fff;
+  font-size: 47px;
+}
+main #callto-sec .callto-sec-bg .callto-sec-text p {
+  color: #fff;
+}
+main #callto-sec .callto-sec-bg .callto-sec-text button {
+  border-radius: 35px;
+  border: 1px solid #F6214B;
+  background-color: #F6214B;
+  color: #fff;
+  padding: 10px 20px;
+  transition-duration: 0.5s;
+}
+main #callto-sec .callto-sec-bg .callto-sec-text button:hover {
+  border: 1px solid #fff;
+  background: transparent;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+footer .foot-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  padding: 25px;
+}
+footer .foot-content .foot-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer .foot-content .foot-icons .foot-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #000;
+  color: #fff;
+}
+footer .foot-content .foot-icons .foot-icon:hover {
+  background-color: #F6214B;
+}
+
+@media only screen and (max-width: 490px) {
+  header .top-header {
+    display: none;
+  }
+  main #banner-sec .banner-sec-bg .banner-text {
+    width: 100%;
+  }
+  main #banner-sec .banner-sec-bg .banner-text h1 {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  main #student-sec .student-main {
+    width: 100%;
+  }
+  main #student-sec .student-main h2 {
+    font-size: 18px;
+  }
+  main #student-sec .student-head img {
+    width: 100%;
+  }
+  main #student-sec .student-head button {
+    padding: 5px 15px;
+    top: 65%;
+  }
+  main #student-sec .student-text h3 {
+    font-size: 16px;
+  }
+  main #callto-sec {
+    background-color: #000;
+  }
+  main #callto-sec .callto-sec-bg .callto-sec-text {
+    width: 100%;
+    margin: 0;
+  }
+  main #callto-sec .callto-sec-bg .callto-sec-text h2 {
+    font-size: 18px;
+  }
+  footer .foot-content {
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+#form-sec-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#form-sec-box #form-sec {
+  width: 100%;
+}
